@@ -10,3 +10,5 @@ jobs:
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
       - run: echo "Ceci est un fichier généré dynamiquement" > test_fichier.txt
       - run: python3 job.py
+	env:
+          SECRET_API_TOKEN: ${{ secrets.SECRET_API_TOKEN }}
